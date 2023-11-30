@@ -17,7 +17,9 @@ export default function LoginPage() {
                         className="logo d-flex align-items-center w-auto"
                       >
                         <img src="assets/img/logo.png" alt="logo" />
-                        <span className="d-none d-lg-block">NiceAdmin</span>
+                        <span className="d-none d-lg-block">
+                          Righteous Pharmaceuticals
+                        </span>
                       </a>
                     </div>
                     {/* End Logo */}
@@ -28,7 +30,7 @@ export default function LoginPage() {
                             Login to Your Account
                           </h5>
                           <p className="text-center small">
-                            Enter your username &amp; password to login
+                            Enter your userId &amp; password to login
                           </p>
                         </div>
                         <form className="row g-3 needs-validation" noValidate>
@@ -37,7 +39,7 @@ export default function LoginPage() {
                               htmlFor="yourUsername"
                               className="form-label"
                             >
-                              Username
+                              UserID
                             </label>
                             <div className="input-group has-validation">
                               <span
@@ -54,7 +56,7 @@ export default function LoginPage() {
                                 required
                               />
                               <div className="invalid-feedback">
-                                Please enter your username.
+                                Please enter your userId.
                               </div>
                             </div>
                           </div>
@@ -76,23 +78,7 @@ export default function LoginPage() {
                               Please enter your password!
                             </div>
                           </div>
-                          <div className="col-12">
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                name="remember"
-                                defaultValue="true"
-                                id="rememberMe"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="rememberMe"
-                              >
-                                Remember me
-                              </label>
-                            </div>
-                          </div>
+                          <div className="col-12"></div>
                           <div className="col-12">
                             <Link
                               href={"/admin/dashboard"}
@@ -102,24 +88,14 @@ export default function LoginPage() {
                               Login
                             </Link>
                           </div>
-                          <div className="col-12">
-                            <p className="small mb-0">
-                              Don't have account?{" "}
-                              <a href="pages-register.html">
-                                Create an account
-                              </a>
-                            </p>
-                          </div>
                         </form>
                       </div>
                     </div>
                     <div className="credits">
-                      {/* All the links in the footer should remain intact. */}
-                      {/* You can delete the links only if you purchased the pro version. */}
-                      {/* Licensing information: https://bootstrapmade.com/license/ */}
-                      {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ */}
-                      Designed by{" "}
-                      <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                      Designed by
+                      <a href="https://rightclicksolutions.tech">
+                        RightClickSolutions
+                      </a>
                     </div>
                   </div>
                 </div>
